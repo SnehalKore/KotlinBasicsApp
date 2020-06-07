@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dataFragment">
+
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.example.navigationarchitecturewithkotlin.views.fragments.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data">
+        <action
+            android:id="@+id/action_dataFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment"
+            app:popUpTo="@id/dataFragment" />
+        <action
+            android:id="@+id/action_dataFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.navigationarchitecturewithkotlin.views.fragments.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_popular_movies">
+        <action
+            android:id="@+id/action_popularMoviesFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.example.navigationarchitecturewithkotlin.views.fragments.SeriesFragment"
+        android:label="fragment_series"
+        tools:layout="@layout/fragment_series">
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.example.navigationarchitecturewithkotlin.views.fragments.MovieDetailsFragment"
+        android:label="fragment_movie_detail"
+        tools:layout="@layout/fragment_movie_details" />
+    <fragment
+        android:id="@+id/sortByFragment"
+        android:name="com.example.navigationarchitecturewithkotlin.views.fragments.SortByFragment"
+        android:label="fragment_sort_by"
+        tools:layout="@layout/fragment_sort_by" />
+</navigation>

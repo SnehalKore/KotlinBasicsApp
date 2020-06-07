@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NavigationArchitectureWithKotlin</string>
+
+    <string name="filter_menu">SORT BY</string>
+    <string name="sort_by_date">RELEASE DATE</string>
+    <string name="sort_by_rating">RATING (AVERAGE VOTE)</string>
+    <string name="clear_sort">CLEAR</string>
+    <string name="api_key">acd1f9d9f8a4544107e17ee38209fc8c</string>
+    <string name="popular_movies">Movies</string>
+    <string name="sort_by_date_title">Movies Sort By Date</string>
+    <string name="vote_average">Movies Sort By Average Vote</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="release_date_sort">release_date.desc</string>
+    <string name="vote_avg_sort">vote_average.desc</string>
+    <string name="series">SERIES</string>
+    <string name="coming_soon">COMING SOON....</string>
+</resources>
